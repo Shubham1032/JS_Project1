@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3D087B;
+}
+.clock_img{
+    /* position: relative; */
+    background: transparent url('./clock_logo.png') 0% 0% no-repeat padding-box;
+    width: 204px;
+    height: 77px;
+    /* top: 34px;
+left: 124px; */
+margin-left: 124px;
+margin-top: 34px;
+}
+.remarkbox1{
+    position: absolute;
+    top: 23px;
+    left: 474px;
+    width: 209px;
+    height: 78px;
+    background: #FFFFFF  ;
+
+    /* box-shadow: 0px 0px 30px #00000029; */
+    border-radius: 15px;
+    color: gray;
+    box-sizing: border-box;
+    padding: 10px;
+    letter-spacing: 0;
+    font-size: large;
+}
+
+.flex_container{
+    float: left;
+    /* display: inline; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 566px;
+    height: 385px;
+    margin-left: 146px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 0;
+}
+.box{
+    margin: 0;
+   
+    /* background-color: wheat; */
+} 
+.box2{
+    width: 556px;
+    margin: 0px;
+}
+.box1{
+  
+    margin: 2px;
+}
+.wakeup{
+    display: inline;
+    
+}
+.wakeupimg{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.wakeuptext{
+    display: inline;
+    color: #3D087B;
+   font-size: x-large;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+.dropdown{
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    font-size: larger;
+    color: #3D087B;
+    border: 1px solid white;
+}
+.dropdownlunch{
+    margin-left: 77px;
+
+}
+.dropdownnap{
+    margin-left: 100px;
+}
+.dropdownnight{
+    margin-left: 85px;
+}
+
+
+
+.grab{
+    float: right;
+    width: 506px;
+    height: 118px;
+    margin-top: 80px;
+    margin-right: 100px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+    color: #8E53F0;
+    padding-top: 40PX;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15PX;
+}
+.imagepg1{
+    float: right;
+    width: 506px;
+    height: 341px;
+    background-image: url(./Component\ 30\ –\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.goodmorning{
+    width: 566px;
+    height: 77px;
+    background-color: #614285de;
+    margin-left: 150px;
+    margin-top: 435px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    box-sizing: border-box;
+    padding-top: 25px;
+    color: white;
+    font-weight: bolder;
+}
+.setalarm{
+    
+    background-image: linear-gradient(
+        to right,
+        #6E54EC,
+        #F25CFE
+    );
+    
+    margin-left: 144px;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: x-large;
+
+}
+.setalarm2{
+    
+    background-image: linear-gradient(
+        to right,
+        #6E54EC,
+        #F25CFE
+    );
+    position: absolute;
+    left: 0;
+    margin-left: 144px;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: x-large;
+
+}
+.setalarm:hover{
+    
+    content: "Party";
+    background-image: linear-gradient(
+        to left,
+        #6E54EC,
+        #F25CFE
+    );
+    /* text-transform: ; */
+}
+.timesummry{
+    position: absolute;
+   
+    left: 33%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: large;
+    border: none;
+    padding: 10px;
+   width: 250px;
+   height: 117px;
+   margin: 10px;
+    background-color:#614285de;
+    color: #F25CFE;
+    border-radius: 5px;
+}
+.backbox1{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    background-color: #8E53F0;
+    top: 120px;
+    right: 180px;
+    opacity: .25;
+    border-radius: 10px;
+}
+.backbox2{
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    background-color: #FFFFFF;
+    top: 110px;
+    right: 170px;
+    opacity: .55;
+    border-radius: 10px;
+}
+.time{
+    box-sizing: border-box;
+    font-size: x-large;
+    color: #3D087B;
+    padding-left: 20px;
+}
+.timebox{
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,auto);
+    width: 536px;
+    height: 114px;
+    background-color: #FFFFFF;
+    top: 40px;
+    right: 85px;
+    opacity: 1;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.flex{
+    margin-left: 0px;
+   display: flex;
+   text-align: center;
+    width: 80px;
+    height: 90px;
+}
+.flexitme1{
+    text-align: center;
+   
+    width: 80px;
+    height: 90px;
+    
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-weight: bolder; 
+    color: #3D087B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexitme2{
+    background-image: url(./timeline.png);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 90px;
+    text-align: center;
+    color: #3D087B;
+    font-size: x-large;
+    padding-left: 13px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexitme3{
+    box-sizing: border-box;
+    padding-top: 15px;
+    background-image: url(./timeline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 90px;
+    font-size: x-large;
+    text-align: center;
+    padding-left: 13px;
+    color: #3D087B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexitme4{
+    box-sizing: border-box;
+    padding-top: 15px;
+    background-image: url(./timeline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 90px;
+    padding-left: 13px;
+    font-size: x-large;
+    text-align: center;
+   
+    color: #3D087B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexitme5{
+
+    background-image: url(./AM_svg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 90px;
+    font-size: xx-large;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
