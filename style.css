@@ -22,7 +22,7 @@ margin-top: 34px;
     width: 209px;
     height: 78px;
     background: #FFFFFF  ;
-
+    
     /* box-shadow: 0px 0px 30px #00000029; */
     border-radius: 15px;
     color: gray;
@@ -135,9 +135,8 @@ margin-top: 34px;
     color: white;
     font-weight: bolder;
 }
-.setalarm{
-    
-    background-image: linear-gradient(
+.btn{
+     background-image: linear-gradient(
         to right,
         #6E54EC,
         #F25CFE
@@ -154,35 +153,19 @@ margin-top: 34px;
     font-size: x-large;
 
 }
-.setalarm2{
-    
-    background-image: linear-gradient(
-        to right,
-        #6E54EC,
-        #F25CFE
-    );
-    position: absolute;
-    left: 0;
-    margin-left: 144px;
-    width: 300px;
-    height: 50px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    font-size: x-large;
+.btn:hover span{
+    display: none;
+}
+.btn:hover::before{
+    content: "PARTY TIME !!";
 
 }
-.setalarm:hover{
-    
-    content: "Party";
+.btn:hover{
     background-image: linear-gradient(
         to left,
         #6E54EC,
         #F25CFE
     );
-    /* text-transform: ; */
 }
 .timesummry{
     position: absolute;
