@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Clock</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <style>
         span{
@@ -16,14 +19,14 @@
 </head>
 <body>
       <div class="clock_img"></div>
-      <div class="remarkbox1">The message and image will change according to the time</div>
+      <!-- <div class="remarkbox1">The message and image will change according to the time</div> -->
       <div class="flex_container">
         <div class="box box1">
             <div class="wakeup">
                 <img src="./wake_up.png" class="wakeupimg">
             </div>
             <label for="wakeuptext" class="wakeuptext">Set wake up time</label>
-            <select  class="dropdown">
+            <select  class="dropdown" id="selectwakeup">
                 <option value="">10 AM to 11AM</option>
                 <option value="">12AM to 1AM</option>
                 <option value="">1AM to 2AM</option>
@@ -43,8 +46,16 @@
                 <img src="./lunch_time.png" class="wakeupimg">
             </div>
             <label for="wakeuptext" class="wakeuptext">Set lunch time        </dd></label>
-            <select  class="dropdown dropdownlunch">
+            <select  class="dropdown dropdownlunch" id="selectlunch">
                 <option value="">12 PM to 1PM</option>
+                <option value="">1AM to 2AM</option>
+                <option value="">2AM to 3 AM</option>
+                <option value="">3AM to 4 AM</option>
+                <option value="">4AM to 5 AM</option>
+                <option value="">5AM to 6 AM</option>
+                <option value="">6AM to 7 AM</option>
+                <option value="">7AM to 8 AM</option>
+                <option value="">8AM to 9 AM</option>
             </select>
         </div>
         <span>|</span>
@@ -53,8 +64,16 @@
                 <img src="./nap_time.png" class="wakeupimg">
             </div>
             <label for="wakeuptext" class="wakeuptext">Set nap time</label>
-            <select  class="dropdown dropdownnap">
+            <select  class="dropdown dropdownnap"id="selectnap">
                 <option value=""> 4 PM to 5PM</option>
+                <option value="">1AM to 2AM</option>
+                <option value="">2AM to 3 AM</option>
+                <option value="">3AM to 4 AM</option>
+                <option value="">4AM to 5 AM</option>
+                <option value="">5AM to 6 AM</option>
+                <option value="">6AM to 7 AM</option>
+                <option value="">7AM to 8 AM</option>
+                <option value="">8AM to 9 AM</option>
             </select>
         </div>
         <span>|</span>
@@ -63,32 +82,45 @@
                 <img src="./nap_time.png" class="wakeupimg">
             </div>
             <label for="wakeuptext" class="wakeuptext">Set night time</label>
-            <select  class="dropdown dropdownnight">
+            <select  class="dropdown dropdownnight" id="selectnight">
                 <option value="">4 PM to 5PM</option>
+                <option value="">1AM to 2AM</option>
+                <option value="">2AM to 3 AM</option>
+                <option value="">3AM to 4 AM</option>
+                <option value="">4AM to 5 AM</option>
+                <option value="">5AM to 6 AM</option>
+                <option value="">6AM to 7 AM</option>
+                <option value="">7AM to 8 AM</option>
+                <option value="">8AM to 9 AM</option>
             </select>
         </div>
      
         
       </div>
-      <div class="grab">GRAB SOME HEALTHY BREAKFAST!!</div>
-      <div class="imagepg1"></div>
-      <div class="goodmorning">GOOD MORNING !! WAKE UP !!!</div>
-      <button class="btn setalarm">
-       <span style="color: white;"> SET ALARM</span>
+      <div class="grab" id="grab">GRAB SOME HEALTHY BREAKFAST!!</div>
+      <div class="imagepg1" id="imagepg"></div>
+      <div class="goodmorning" id="Good">GOOD MORNING !! WAKE UP !!!</div>
+      <button class="btn setalarm" id="setAlarm">
+  SET ALARM
     </button>
-      <!-- <button class="btn setalarm2">SET ALARM!!!</button> -->
-      <span class="timesummry">Wake up time:10AM-11AM<br>Lunch time:12PM-1PM<br>Nap Time:4PM-5PM<br>Night Time:8PM-9AM</span>
-     <div class="backbox1"></div>
-     <div class="backbox2"></div>
-    <div class="timebox">
+   <div id="timesummry">
+    <div id="wakeupsummry">Wake up time:10AM-11AM</div>
+    <div id="lunchsummry">Lunch time:12PM-1PM</div>
+    <div id="napsummry">Nap Time:4PM-5PM</div>
+    <div id="nightsummry">Night Time:8PM-9AM</div>
+</div>
+   <div class="backbox1"></div>
+   <div class="backbox2"></div>
+   <div class="timebox">
    <div class="flex flexitme1">TIME</div>
-   <div class="flex flexitme2">10<br>hours</div>
-   <div class="flex flexitme3">00<br>Mins</div>
-   <div class="flex flexitme4">01<br>sec</div>
-   <div class="flex flexitme5">AM</div>
+   <div class="flex flexitme2" id="hour">10<br>hours</div>
+   <div class="flex flexitme3" id="min">00<br>mins</div>
+   <div class="flex flexitme4" id="sec">01<br>sec</div>
+   <div class="flex flexitme5" id="timezone">AM</div>
   
     </div>
 
     <div class="messagebox2"></div>
+    <script src="./style.js"></script>
     </body>
 </html>
