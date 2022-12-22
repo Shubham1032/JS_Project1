@@ -31,13 +31,13 @@ function clock(){
     timezone.innerText="PM";
         Good.innerText="GOOD EVENING !!";
         grab.innerText="STOP YAWNING,GET SOME TEA.. ITS JUST EVENING!";
-        imagepg.style.backgroundImage="URL('./Component 31 – 1@2x.png')";
+        imagepg.style.backgroundImage="URL('./EVENINGiMAGE.png')";
     }
  else  if(hours>=20 && hours<=24){
     timezone.innerText="PM";
         Good.innerText="GOOD NIGHT !!";
         grab.innerText="CLOSE YOUR EYES AND GO TO SLEEP";
-        imagepg.style.backgroundImage="URL('Component 31 – 1.svg')";
+        imagepg.style.backgroundImage="URL('./NIGHTIMAGE.png')";
     };
     
 // to not display time in 24 hour format
