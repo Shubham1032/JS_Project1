@@ -25,13 +25,14 @@ function clock(){
         timezone.innerText="PM";
         Good.innerText="GOOD AFTERNOON!! TAKE SOME SLEEP";
         grab.innerText="LET'S HAVE SOME LUNCH !!";
-       imagepg.style.backgroundImage="URL('./lunch_image.png')";
+
+       imagepg.style.backgroundImage="URL('./EVENINGiMAGE.png')";
     }
    else if(hours>=16 && hours<20){
     timezone.innerText="PM";
         Good.innerText="GOOD EVENING !!";
         grab.innerText="STOP YAWNING,GET SOME TEA.. ITS JUST EVENING!";
-        imagepg.style.backgroundImage="URL('./EVENINGiMAGE.png')";
+       imagepg.style.backgroundImage="URL('./lunch_image.png')";
     }
  else  if(hours>=20 && hours<=24){
     timezone.innerText="PM";
