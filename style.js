@@ -112,33 +112,31 @@ setAlarmbtn.addEventListener("click", function(){
     napsummry.innerText=naptime;
     nightsummry.innerText=nighttime;
    // console.log(timezone.innerText)
-   if(forcomp>12){
-    forcomp-=12
-}
+
    console.log(forcomp);
    console.log(wakeupvalues);
    console.log(lunchvalues);
    console.log(timezone.innerText)
-    if(wakeupvalues==forcomp && timezone.innerText=="PM" || wakeupvalues==forcomp && timezone.innerText=="AM"){
+    if(wakeupvalues==forcomp){
         imagepg.style.backgroundImage="URL('./MORINGIMAGE.png')";
         Good.innerHTML="GOOD MORNING!! ";
         grab.innerHTML="HAVE SOME BREAKFAST !!";
     }
    
-    else if(lunchvalues==forcomp && timezone.innerText=="AM" || lunchvalues==forcomp && timezone.innerText=="PM"){
+    else if(lunchvalues==forcomp){
         imagepg.style.backgroundImage="URL('./lunch_image.png')";
         Good.innerHTML="GOOD AFTERNOON!! TAKE SOME SLEEP";
         grab.innerHTML="LET'S HAVE SOME LUNCH !!";
 
     }
    
-    else if(napvalues==forcomp && timezone.innerText=="AM" || napvalues==forcomp && timezone.innerText=="PM"){
+    else if(napvalues==forcomp){
         imagepg.style.backgroundImage="URL('./EVENINGiMAGE.png')";
         Good.innerText="GOOD EVENING !!";
         grab.innerText="STOP YAWNING,GET SOME TEA.. ITS JUST EVENING!";
     }
    
-    else if(nightvalues==forcomp && timezone.innerText=="AM" || nightvalues==forcomp && timezone.innerText=="PM"){
+    else if(nightvalues==forcomp){
         imagepg.style.backgroundImage="URL('./NIGHTIMAGE.png')";
         Good.innerText="GOOD NIGHT !!";
         grab.innerText="CLOSE YOUR EYES AND GO TO SLEEP";
